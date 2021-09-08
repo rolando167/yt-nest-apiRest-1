@@ -1,0 +1,75 @@
+
+YT: Fastest Way to Create APIs? | NestJS Tutorial
+
+https://www.youtube.com/watch?v=WZtHM4Ph-K8
+----------------------------
+
+https://docs.nestjs.com/first-steps
+
+>nest -v
+---------------------
+instalar de manera global:
+> npm i -g @nestjs/cli
+
+---------------------
+
+Crear Proyecto:
+
+>nest new project-name
+
+---------------------
+Iniciar Proyecto
+
+>nest start --watch
+
+ERROR AL EJECUTAR: porque la ejecución de scripts está deshabilitada...
+
+1. Abrir windows Powershell, click derecho en icono de windows
+
+Comandos -
+
+Get-ExecutionPolicy -list
+
+Set-ExecutionPolicy RemoteSigned -Force
+
+
+2.- Luegor abrir con wind + R Comando para abrir Gpedit, no funciona en windows 10 home
+
+gpedit.msc
+
+-------------
+Crear modulo Usuarios
+-- g   generate
+
+> nest g module Users
+
+-------------
+Crear Controlador Usuarios
+
+>nest g controller Users
+
+-------------
+Crear Servicio
+
+> nest g service users
+
+-------------
+Instalar swagger
+
+> npm install --save @nestjs/swagger swagger-ui-express
+
+-------------
+https://docs.nestjs.com/techniques/database
+Instalar TypeORM Integration- se usra sqLite3
+
+>npm install --save @nestjs/typeorm typeorm sqlite3
+
+-------------
+Instalar https://github.com/nestjsx/crud/wiki/Controllers#description
+
+> npm i @nestjsx/crud class-transformer class-validator
+
+> npm i @nestjsx/crud-typeorm @nestjs/typeorm typeorm
+-------------
+
+
